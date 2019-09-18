@@ -1,0 +1,1183 @@
+html {
+   
+    margin: auto;
+}
+/*
+********************************************************************************************
+    About Tool Area
+*/
+header{
+    text-align: center;
+    position: absolute;;
+    padding:0;
+    opacity: 1;
+    padding-bottom: 60px;
+    margin:0;
+    top:0;
+    left:0;
+    width: 100%;
+    background-color: blue;
+}
+
+#title{
+    color: rgb(211, 207, 207);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 35px;
+
+}
+
+#navList{
+    position: absolute;
+    top: 81px;
+    left: -40px;
+}
+
+#navList ul{
+    list-style-type: none;
+}
+
+#navList li{
+    float: left;
+}
+
+#navList li a{
+    display: block;
+    color: rgb(197, 197, 197);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    width: 180px;
+    font-size: 20px;
+}
+
+#navList li a:hover{
+    font-weight: bolder;
+    background-color: rgb(190, 184, 184);
+    color: rgb(56, 25, 25);
+}
+
+#title-p{
+    text-align: center;
+    line-height: 50px;
+    font-size:50px;
+    width: 100%;
+    font-family: Berlin Sans FB Demi; 
+}
+
+#welcome-text {
+    display: none;
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 25px;
+    top: 150px;
+    margin-left: 8%;
+    text-align: justify;
+    margin-right: 8%;
+    font-size: 22px;
+}
+
+/*
+    About Tool Area End
+*******************************************************************************************************
+*/
+
+/*
+*******************************************************************************************************
+    Create Password view
+*/
+#pwordForm{
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top: 46px;
+    width: 100%;
+}
+#e-instructions{
+    position: relative;
+    left: 70px;
+    width: 1400px;
+    top: -80px;
+    font-size: 28px;
+    text-align: left;
+    margin-bottom: 2px;
+}
+#encrypt-area{
+    display: none;
+    position: relative;
+    top: 220px;
+}
+
+#encryptSentence{
+    position: relative;
+    width: 960px;
+    left: 150px;
+    top: -30px;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+#sentence{
+    position: relative;
+    left: 150px;
+    top: -30px;
+    font-size: 20px;
+    width: 1000px;
+}
+
+#submitBtn{
+    position: relative;
+    left: 150px;
+    top: -32px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#result{
+    position: relative;
+    left: 150px;
+    width: 560px;
+    top: 10;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+/*
+    Create Password view end
+    ****************************************************************************************************
+*/
+
+/*
+********************************************************************************************************
+    Decrypt Password view
+*/
+
+#decryptForm{
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top: 46px;
+}
+
+#d-instructions{
+    position: relative;
+    left: 70px;
+    top: -80px;
+    font-size: 22px;
+    text-align: left;
+    margin-bottom: 2px;
+}
+
+
+#decrypt-area{
+    display: none;
+    position: relative;
+    top: 200px;
+}
+
+
+
+#dSentence{
+    position: relative;
+    left: 150px;
+    top: -30px;
+    font-size: 20px;
+    width: 60%;
+    
+}
+
+#key{
+    position: relative;
+    left: 150px;
+    top: -20px;
+    font-size: 20px;
+    width: 60%;
+}
+
+#decrypt-btn{
+    position: relative;
+    left: 150px;
+    top: -14px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#decrypt-result{
+    position: relative;
+    left: 150px;
+    top: 20px;
+    font-size: 24px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*
+    Decrypt Password view end
+*********************************************************************************************************
+*/
+
+/* @media only screen and (max-width: 1030px) {
+    #welcome-text {
+        top: 120px;
+        margin-left: 3%;
+        margin-right: 3%;
+        font-size: 20px;
+    }
+  } */
+
+@media only screen and (max-width: 1500px){
+    #e-instructions{
+        left: 40px;
+        font-size: 26px;
+    }
+    #encrypt-area{
+        display: none;
+        position: fixed;
+        top: 220px;
+    }
+    
+    #encryptSentence{
+        left: 40px;
+        top: -40px;
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+    
+    #sentence{
+        left: 40px;
+        top: -50px;
+        font-size: 22px;
+        width: 1000px;
+    }
+    
+    #submitBtn{
+        
+        left: 43px;
+        top: -52px;
+        padding: 5px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    
+    #result{
+        left: 40px;
+        top: -10px;
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width: 1300px){
+    header{
+        padding-bottom: 58.5px;
+    }
+    #title-p{
+        font-size:42px;
+    }
+    #navList li a{
+        font-size: 18px;
+        width: 170px;
+    }
+    #welcome-text{
+        font-size: 21px;
+    }
+    #e-instructions{
+        left: 40px;
+        font-size: 25px;
+    }
+    #encrypt-area{
+        display: none;
+        position: fixed;
+        top: 220px;
+    }
+    
+    #encryptSentence{
+        left: 40px;
+        top: -40px;
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+    
+    #sentence{
+        left: 40px;
+        top: -50px;
+        font-size: 22px;
+        width: 1000px;
+    }
+    
+    #submitBtn{
+        
+        left: 43px;
+        top: -52px;
+        padding: 5px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    
+    #result{
+        left: 0px;
+        top: -10px;
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    #title-p{
+        font-size:38px;
+    }
+    #welcome-text{
+        left: -10px;
+        font-size: 20px;
+    }
+    #e-instructions{
+        left: 30px;
+        font-size: 22px;
+    }
+    #encrypt-area{
+        display: none;
+        
+        top: 200px;
+    }
+    
+    #encryptSentence{
+        left: 0px;
+        top: -30px;
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+    
+    #sentence{
+        left: 0px;
+        top: -60px;
+        font-size: 21px;
+        width: 890px;
+    }
+    
+    #submitBtn{
+        
+        left: 0px;
+        top: -62px;
+        padding: 5px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    
+    #result{
+        left: 0px;
+        top: -10px;
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+/*
+********************************************************************************************
+    About Tool Area
+*/
+    /* body {
+      background-color: rgb(190, 184, 184)
+    } */
+    header{
+        padding-bottom: 66px;
+    }
+    #title{
+        color: rgb(211, 207, 207);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 30px;
+    }
+    
+    #navList ul{
+        list-style-type: none;
+    }
+    
+
+    #navList li a{
+        width: 150px;
+        font-size: 14px;
+    }
+    
+    #title-p{
+        font-size: 35px;
+    }
+    #welcome-text {
+        top: 140px;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 17px;
+        width: 85%;
+    }
+    #e-instructions{
+        left: 10px;
+        font-size: 20px;
+    }
+    #encrypt-area{
+        top: 180px;
+    }
+    
+    #encryptSentence{
+        left: 0px;
+        top: -30px;
+        margin-bottom: 30px;
+        font-size: 19px;
+    }
+    
+    #sentence{
+        left: 0px;
+        top: -50px;
+        font-size: 20px;
+        width: 780px;
+    }
+    
+    #submitBtn{
+        top: -52px;
+        padding: 5px;
+        font-size: 12px;
+    }
+    
+    #result{
+        left: 0px;
+        top: -10px;
+        font-size: 22px;
+    }
+
+/*
+*******************************************************************************************************
+    Create Password view
+*/
+
+}
+
+@media only screen and (max-width: 962px){
+    
+    #welcome-text{
+        left: 12px;
+        font-size: 19px;
+        margin: 6%;
+    }
+    #e-instructions{
+        left: 10px;
+        font-size: 18px;
+    }
+    #encrypt-area{
+        top: 180px;
+    }
+    
+    #encryptSentence{
+        left: 0px;
+        top: -30px;
+        margin-bottom: 30px;
+        font-size: 18px;
+    }
+    
+    #sentence{
+        left: 0px;
+        top: -50px;
+        font-size: 18px;
+        width: 780px;
+    }
+    
+    #submitBtn{
+        top: -52px;
+        padding: 5px;
+        font-size: 11px;
+    }
+    
+    #result{
+        left: 0px;
+        top: -10px;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 872px){
+    #e-instructions{
+        left: 10px;
+        font-size: 17px;
+    }
+    #encrypt-area{
+        top: 180px;
+    }
+    
+    #encryptSentence{
+        left: 0px;
+        top: -30px;
+        margin-bottom: 30px;
+        font-size: 17px;
+    }
+    
+    #sentence{
+        left: 0px;
+        top: -50px;
+        font-size: 17px;
+        width: 630px;
+    }
+    
+    #submitBtn{
+        top: -52px;
+        padding: 5px;
+        font-size: 10px;
+    }
+    
+    #result{
+        left: 0px;
+        top: -10px;
+        font-size: 19px;
+    }
+}
+
+@media only screen and (max-width: 762px){
+    
+    
+    #result{
+        left: 80px;
+        top: -20px;
+        font-size: 20px;
+    }
+    #title-p{
+        font-size: 32px;
+    }
+    #welcome-text{
+        left: 12px;
+        font-size: 17px;
+        margin: 6%;
+    }
+    #e-instructions{
+        left: 20px;
+        font-size: 17px;
+    }
+    #encrypt-area{
+        display: none;
+        top: 180px;
+    }
+    
+    #encryptSentence{
+        left: 20px;
+        top: -30px;
+        margin-bottom: 30px;
+        font-size: 13px;
+    }
+    
+    #sentence{
+        left: 20px;
+        top: -55px;
+        font-size: 17px;
+        width: 470px;
+    }
+    
+    #submitBtn{
+        
+        left: 20px;
+        top: -56.4px;
+        padding: 5.4px;
+        font-size: 10px;
+        cursor: pointer;
+    }
+    
+    #result{
+        left: 20px;
+        top: -10px;
+        font-size: 20px;
+    }
+}
+
+
+
+@media only screen and (max-width: 572px){
+    header{
+        padding-bottom: 71px;
+    }
+    #title{
+        font-size: 28px;
+    }
+    #title-p{
+        font-size: 30px;
+    }
+
+    #navList{
+        float: right;
+    }
+    #navList li a{
+        width: 146.5px;
+    }
+    #welcome-text{
+        font-size: 16px;
+        left: -10px;
+        margin: 8%;
+    }
+    #e-instructions{
+        left: 20px;
+        font-size: 14px;
+    }
+    #encrypt-area{
+        top: 180px;
+    }
+    
+    #encryptSentence{
+        left: 20px;
+        top: -40px;
+        margin-bottom: 30px;
+        font-size: 10px;
+    }
+    
+    #sentence{
+        left: 20px;
+        top: -60px;
+        font-size: 16px;
+        width: 380px;
+    }
+    
+    #submitBtn{
+        
+        left: 20px;
+        top: -62px;
+        padding: 4px;
+        font-size: 9px;
+        cursor: pointer;
+    }
+    
+    #result{
+        left: 20px;
+        top: -10px;
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 536px){
+    header{
+        padding-bottom: 71px;
+    }
+    #title{
+        font-size: 28px;
+    }
+    #title-p{
+        font-size: 30px;
+    }
+
+    #navList{
+        float: right;
+    }
+    #navList li {
+        width: 33%;
+    }
+    #navList li a{
+        width: 120px;
+    }
+    #welcome-text{
+        font-size: 16px;
+        left: -10px;
+        margin: 8%;
+    }
+    #e-instructions{
+        left: 20px;
+        font-size: 14px;
+    }
+    #encrypt-area{
+        top: 180px;
+    }
+    
+    #encryptSentence{
+        left: 20px;
+        top: -30px;
+        margin-bottom: 30px;
+        font-size: 10px;
+    }
+    
+    #sentence{
+        left: 20px;
+        top: -55px;
+        font-size: 16px;
+        width: 350px;
+    }
+    
+    #submitBtn{
+        
+        left: 20px;
+        top: -57.26px;
+        padding: 5px;
+        font-size: 8px;
+    }
+    
+    #result{
+        left: 20px;
+        top: -10px;
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 452px){
+    header{
+        padding-bottom: 48px;
+    }
+    
+    #navList li{
+        font-size: 12px;
+    }
+    #navList{
+        top: 58px;
+    }
+    #title{
+        font-size: 23spx;
+    }
+    #title-p{
+        font-size: 25px;
+    } 
+
+    #welcome-text{
+        font-size: 15px;
+        margin: 6%;
+    }
+    #e-instructions{
+        left: 5px;
+        font-size: 12px;
+        width: 400px;
+    }
+    #encrypt-area{
+        width: 390px;
+        left: 12px;
+        top: 180px;
+    }
+    
+    #encryptSentence{
+        left: 12px;
+        top: -30px;
+        margin-bottom: 30px;
+        font-size: 9px;
+    }
+    
+    #sentence{
+        left: 12px;
+        top: -52px;
+        font-size: 14px;
+        width: 300px;
+    }
+    
+    #submitBtn{
+        
+        left: 18px;
+        top: -55px;
+        padding: 5px;
+        font-size: 8px;
+        cursor: pointer;
+    }
+    
+    #result{
+        left: 12px;
+        top: -10px;
+        font-size: 14px;
+    }
+}
+
+
+@media only screen and (max-width: 415px){
+    header{
+        padding-bottom: 57px;
+    }
+    #navList{
+        top: 55px;
+    }
+    #navList li a{
+        width: 106.2px;
+        font-size: 11px;
+    }
+    #title{
+        font-size: 22px;
+    }
+    #title-p{
+        position: relative;
+        top: -30px;
+        font-size: 18px;
+    } 
+
+    #welcome-text{
+        font-size: 15px;
+    }
+    #e-instructions{
+        left: 10px;
+        font-size: 10px;
+    }
+    #encrypt-area{
+        top: 150px;
+    }
+    
+    #encryptSentence{
+        left: 20px;
+        top: -30px;
+        margin-bottom: 30px;
+        font-size: 9px;
+    }
+    
+    #sentence{
+        left: 20px;
+        top: -55px;
+        font-size: 14px;
+        width: 200px;
+    }
+    
+    #submitBtn{
+        
+        left: 20px;
+        top: -57px;
+        padding: 5px;
+        font-size: 7px;
+    }
+    
+    #result{
+        left: 20px;
+        top: -10px;
+        font-size: 16px;
+    }
+    #decryptForm{
+        font-family: Arial, Helvetica, sans-serif;
+        top: 2px;
+        left: -10;
+    }
+    
+    #d-instructions{
+        left: 70px;
+        top: -80px;
+        font-size: 14px;
+        text-align: left;
+        margin-bottom: 2px;
+        width: 300px;
+    }
+    
+    
+    #decrypt-area{
+        top: 200px;
+    }
+    
+    
+    
+    #dSentence{
+        left: 40px;
+        top: -30px;
+        font-size: 20px;
+        width: 290px;
+        
+    }
+    
+    #key{
+        left: 40px;
+        top: -20px;
+        font-size: 20px;
+        width: 60%;
+    }
+    
+    #decrypt-btn{
+        position: relative;
+        left: 40px;
+        top: -14px;
+        padding: 5px;
+    }
+}
+/*
+Pixel 2XL
+*/
+@media only screen and (max-width: 412px){
+    header{
+        padding-bottom: 57px;
+    }
+
+    #navList li{
+        
+        font-size: 11px;
+    }
+    #title{
+        font-size: 22px;
+    }
+    #title-p{
+        position: relative;
+        top: -30px;
+        font-size: 18px;
+    } 
+
+    #welcome-text{
+        font-size: 15px;
+    }
+    #e-instructions{
+        left: 20px;
+        font-size: 11px;
+    }
+    #encrypt-area{
+        display: none;
+        position: fixed;
+        top: 180px;
+    }
+    
+    #encryptSentence{
+        left: 20px;
+        top: -30px;
+        margin-bottom: 30px;
+        font-size: 9px;
+        width: 380px;
+    }
+    
+    #sentence{
+        left: 20px;
+        top: -55px;
+        font-size: 14px;
+        width: 200px;
+    }
+    
+    #submitBtn{
+        
+        left: 20px;
+        top: -57px;
+        padding: 5px;
+        font-size: 7px;
+    }
+    
+    #result{
+        left: 20px;
+        top: -10px;
+        font-size: 15px;
+    }
+
+}
+/* Iphone X */
+@media only screen and (max-width: 376px){
+    header{
+        padding-bottom: 42px;
+    }
+    #navList {
+        top: 40px;
+    }
+    #navList li a{
+        width: 93px;
+        font-size: 11px;
+    }
+    #title{
+        font-size: 22px;
+    }
+    #title-p{
+        position: relative;
+        top: -30px;
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 10px;
+    } 
+
+    #welcome-text{
+        font-size: 14px;
+        margin: 6%;
+        left: 4px;
+    }
+    #encrypt-area{
+        top: 150px;
+    }
+    #e-instructions{
+        left: 10px;
+        font-size: 10px;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+    
+    
+    #encryptSentence{
+        left: 10px;
+        top: -30px;
+        margin-bottom: 30px;
+        font-size: 9px;
+    }
+    
+    #sentence{
+        left: 10px;
+        top: -50px;
+        font-size: 16px;
+        width: 240px;
+    }
+    
+    #submitBtn{
+        
+        left: 10px;
+        top: -53px;
+        padding: 5px;
+        font-size: 8px;
+    }
+    
+    #result{
+        left: 10px;
+        top: -12px;
+        font-size: 18px;
+    }
+    
+    #d-instructions{
+        top: 0px;
+        left: 0px;
+        font-size: 12px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    
+    #decrypt-area{
+        display: none;
+        position: relative;
+        top: 100px;
+    }
+    
+    
+    
+    #dSentence{
+        position: relative;
+        left: 10px;
+        top: 40px;
+        font-size: 13px;
+        width: 90%;
+        
+    }
+    
+    #key{
+        position: relative;
+        left: 10px;
+        top: 45px;
+        font-size: 13px;
+        width: 60%;
+    }
+    
+    #decrypt-btn{
+        position: relative;
+        left: 10px;
+        top: 52px;
+        font-size: 13px;
+        padding: 5px;
+        cursor: pointer;
+    }
+    
+    #decrypt-result{
+        position: relative;
+        left: 10px;
+        top: 140px;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 361px){
+    header{
+        padding-bottom: 41.8px;
+    }
+ 
+    #title{
+        font-size: 22px;
+    }
+    #title-p{
+        position: relative;
+        top: -30px;
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 10px;
+    } 
+
+    #welcome-text{
+        font-size: 14px;
+        margin: 6%;
+        left: 4px;
+    }
+    #e-instructions{
+        left: 0px;
+        font-size: 11px;
+    }
+    #encrypt-area{
+        display: none;
+        position: fixed;
+        top: 140px;
+    }
+    
+    #encryptSentence{
+        left: 0px;
+        top: -40px;
+        
+        font-size: 8px;
+    }
+    
+    #sentence{
+        left: 0px;
+        top: -65px;
+        font-size: 14px;
+        width: 180px;
+    }
+    
+    #submitBtn{
+        
+        left: 0px;
+        top: -68px;
+        padding: 5px;
+        font-size: 7px;
+    }
+    
+    #result{
+        left: 0px;
+        top: -27px;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 321px){
+    header{
+        padding-bottom: 46px;
+    }
+    #navList li{
+        font-size: 8px;
+    }
+    #navList li a{
+        width: 77px;
+        font-size: 8px;
+    }
+    #title{
+        font-size: 19px;
+    }
+    #title-p{
+        position: relative;
+        top: -30px;
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 10px;
+    } 
+
+    #welcome-text{
+        font-size: 14px;
+        margin: 6%;
+        left: 4px;
+    }
+    #e-instructions{
+        left: -4px;
+        font-size: 9px;
+        width: 300px;
+    }
+    #encrypt-area{
+        width: 300px;
+        top: 140px;
+    }
+    
+    #encryptSentence{
+        left: 0px;
+        width: 300px;
+        top: -30px;
+        margin-bottom: 30px;
+        font-size: 7px;
+    }
+    
+    #sentence{
+        left: 0px;
+        top: -55px;
+        font-size: 14px;
+        width: 180px;
+    }
+    
+    #submitBtn{
+        
+        left: 0px;
+        top: -57px;
+        padding: 5px;
+        font-size: 8px;
+        cursor: pointer;
+    }
+    
+    #result{
+        left: 0px;
+        top: -10px;
+        font-size: 10px;
+    }
+    
+    #d-instructions{
+        left: -10px;
+    }
+}

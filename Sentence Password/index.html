@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' href="main.css">
+  </head>
+    <header>
+        <h1 id = 'title'>Sentence-to-Password Creator</h1>
+        <nav id='navList'>
+            <ul>
+                <li class='link' id = 'lAbout'><a href='#about'>About Tool</a></li>
+                <li class='link' id = 'lCreate'><a href='#create'>Create Password</a></li>
+                <li class='link' id = 'lDecrypt'><a href='#decr'>Decrypt Password</a></li>
+            </ul>                      
+        </nav>
+    </header>
+    <body>
+
+        <div id = 'welcome-text'>
+            <h2 id='title-p'>Welcome to the <strong><i>Sentence-to-Password</i></strong> Creator<br><h6>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspby Jonathan Acevedo</h6></h2>
+            
+            <p>
+                <p>&nbsp&nbsp&nbspThis tool takes a full sentence and produces a <strong>decryption key</strong>
+                 and <strong>password</strong>. 
+                The key produced can be later used to decrypt your password in case you forget it. The sentence could be anything from 
+                lyrics, favorite movie quotes, book quotes, any memorable quote, etc. The <strong>password complexity</strong> will depend on the amount 
+                of words in the sentence. <i>This tool is best useful if you can remember the full sentence</i>, but it's okay if you 
+                need to store it alongside the key.
+                
+                <br><br><br>
+                &nbsp&nbsp&nbspThe <strong>purpose</strong> of this application is to better the way we <strong>create passwords</strong>, improve the security of password protected 
+                accounts worldwide and encourage the <strong>use of secure, 
+                complex & impersonal passwords.</strong> Remembering a password is often dificult for most people and we tend to store it somewhere. 
+                The problem is that when we store it, we risk it being discovered by a malicious user trying to steal your account. If we
+                 instead store information 
+                used to calculate our password, the "hacker" would have a reasonably harder time trying to figure it out. 
+  
+                <br><br><br>
+                &nbsp&nbsp&nbspYou might say, <strong>"<i>Why should I try to remember a sentence when I can't even remember a password?</i>"</strong> My answer;
+                <em>If you really don't have a favorite quote, song or lyric that you can remember, you can just save the sentence & key together.</em>
+                Saving those is safer than saving a password since the key & sentence would be useless to someone who doesn't know which method 
+                you used to create your password. 
+                
+                <br><br><br>
+                &nbsp&nbsp&nbspPasswords should be <strong>smart</strong>, <strong>relatively easy to 
+                remember</strong>  & <strong>hard to guess</strong>. In other words, if you have a cat, <em>you
+                probably shouldn't use its name in your password</em> since someone who is actively trying to access your account would resort to many methods, including 
+                guessing your password based on your interests, public personal information(social media pictures, posts, etc) or other online activity. 
+                So, go ahead. Make a password. <strong>It's free and always will be.</strong>
+                <br><br>
+                <h3>&nbsp&nbsp&nbsp&nbsp&nbsp<i>"The most secure part of using this tool... How will they even know you're using this?"</i> <br>
+                Be the first.</h3> 
+                <h5>&nbsp&nbsp&nbsp&nbsp&nbspFor feedback or questions, email me at jonacevedo96@yahoo.com</h5>
+            </p>
+        </div> 
+
+        <div id = 'encrypt-area'>
+            <form id='pwordForm' autocomplete="off">
+                <div id = 'e-instructions'>
+                    <h3 id='toCreatePassword'>To create a password:</h3> 
+                    Tip: (The more words the sentence has, the longer your password)<br><br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp1. Type a sentence into the textbox.
+                    <br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2. Click the Encrypt button to create a password & key.
+                    <br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp3. Copy your key & sentence to a secure place.
+                </div>
+                <div id ="encryptSentence">
+                    Please enter a sentence you can remember. (Lyrics, Quotes, Long movie titles Etc.): 
+                </div>
+                <input type="text" id="sentence" name="Sentence">
+                <button type="submit" id = 'submitBtn'>Encrypt</button>
+            </form>
+            <div id ='result'></div>
+        </div>
+
+        <div id= 'decrypt-area'>
+            <form id='decryptForm' autocomplete="off">
+                <div id = 'd-instructions'>    
+                    <h3 id='decryptYourPassword'>To decrypt your password:</h3>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp1. Type your sentence into the textbox.
+                        <br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2. Type your key into the second textbox.
+                        <br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp3. Click the decrypt button.
+                        <br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp4. Copy & use your password.
+                        <br>
+                </div>
+                <input id = "dSentence" class="sentence" placeholder="Enter sentence to decrypt">
+                <br>
+                <input id='key' placeholder="Enter decryption key">
+                <br>
+                <button id='decrypt-btn'>Decrypt</button>
+            </form>
+            <div id ='decrypt-result'></div>
+        </div>
+
+        <script src='convert.js'></script>
+       
+    </body>
+</html>
